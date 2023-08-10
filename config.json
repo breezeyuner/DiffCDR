@@ -1,0 +1,63 @@
+{
+    "use_cuda": 0,
+    "root": "./data/",
+
+    "diff_steps" : 1000,
+    "diff_scale" : 0.1,
+    "diff_dim"   : 128,
+    "diff_sample_steps":30,
+    "diff_task_lambda":0.1,
+    "diff_mask_rate":0.1,
+
+    "src_tgt_pairs":
+        {
+            "1":
+            {"src": "Movies_and_TV",
+            "tgt": "CDs_and_Vinyl",
+            "uid": 181187,
+            "iid": 114495,
+            "batchsize_src": 256,
+            "batchsize_tgt": 256,
+            "batchsize_meta": 128,
+            "batchsize_map": 64,
+            "batchsize_ss": 64,
+            "batchsize_la": 64,
+            "batchsize_diff": 128,
+            "batchsize_test": 10240,
+            "batchsize_diff_test": 10240
+            },
+            "2":
+            {"src": "Books",
+            "tgt": "Movies_and_TV",
+            "uid": 690240,
+            "iid": 418034,
+            "batchsize_src": 512,
+            "batchsize_tgt": 512,
+            "batchsize_meta": 512,
+            "batchsize_map": 128,
+            "batchsize_ss": 128,
+            "batchsize_la": 128,
+            "batchsize_diff": 512,
+            "batchsize_test": 10240,
+            "batchsize_diff_test": 10240
+            },
+            "3":
+            {"src": "Books",
+            "tgt": "CDs_and_Vinyl",
+            "uid": 662188,
+            "iid": 432425,
+            "batchsize_src": 512,
+            "batchsize_tgt": 512,
+            "batchsize_meta": 512,
+            "batchsize_map": 128,
+            "batchsize_ss": 128,
+            "batchsize_la": 128,
+            "batchsize_diff": 128,
+            "batchsize_test": 10240,
+            "batchsize_diff_test": 10240
+            }
+        },
+    "emb_dim": 10,
+    "meta_dim": 50,
+    "wd": 0
+    }
