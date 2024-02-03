@@ -2,6 +2,7 @@
 
 
 ## Introduction
+https://github.com/breezeyuner/DiffCDR/blob/main/Diffusion_Cross_domain_Recommendation.pdf
 
 This repository provides the implementations of DiffCDR, including several baselines used in the paper.
 
